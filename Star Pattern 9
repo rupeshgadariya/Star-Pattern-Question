@@ -1,0 +1,25 @@
+/*                                A B C D E
+        Question =>                 B C D E
+                                      C D E
+                                        D E
+                                          E                          */
+#include<stdio.h>
+#include<conio.h>
+
+    void main()
+{
+        int i, j;
+    for (i = 'A'; i <= 'E'; i++)
+    {       
+        for (j = 'A'; j <= 'E'; j++)
+        {
+           if (j>=i)
+            printf("%c ",j);
+          else printf("  ");
+        }
+            printf("\n");
+    }
+    
+        
+    getch();
+}                                       
